@@ -17,11 +17,11 @@ public class AppController {
     protected void calculateButtonClicked() {
         try {
             // Convert the text inputs to numbers
-            double num1 = Double.parseDouble(field1.getText());
-            double num2 = Double.parseDouble(field2.getText());
+            double number1 = Double.parseDouble(field1.getText());
+            double number2 = Double.parseDouble(field2.getText());
 
             // Calculate the sum and display the results
-            double sum = num1 + num2;
+            double sum = number1 + number2;
             welcomeText.setText("Sum: " + sum);
         }
         catch (NumberFormatException e) {
